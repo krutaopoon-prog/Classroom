@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อินเตอร์เฟซเบื้องต้น | ห้องเรียนครูเตาปูน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <span>ห้องเรียนครูเตาปูน</span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="../../index.html">หน้าแรก</a>
+                    <a href="../index.html" class="active">วิชาทั้งหมด</a>
+                    <a href="../../dashboard.html">ความก้าวหน้า</a>
+                </nav>
+                <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div style="background: linear-gradient(135deg, #276749, #48BB78); color:white; padding: 2.5rem 0;">
+        <div class="container">
+            <div class="breadcrumb" style="color:rgba(255,255,255,0.7);">
+                <a href="../../index.html" style="color:rgba(255,255,255,0.7);">หน้าแรก</a> /
+                <a href="../index.html" style="color:rgba(255,255,255,0.7);">วิชาทั้งหมด</a> /
+                <span style="color:white;">อินเตอร์เฟซเบื้องต้น</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-top:1rem;">
+                <div style="font-size:4rem;">🔌</div>
+                <div>
+                    <h1 style="color:white; margin-bottom:0.5rem;">อินเตอร์เฟซเบื้องต้น</h1>
+                    <p style="color:rgba(255,255,255,0.85); margin:0;">Basic Interface | 4 บทเรียน | 4 แบบทดสอบ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="card" style="padding:2rem; text-align:center; color:var(--color-text-light);">
+                <div style="font-size:3rem; margin-bottom:1rem;">🚧</div>
+                <h3 style="color:var(--color-primary);">กำลังพัฒนาเนื้อหา</h3>
+                <p>บทเรียนวิชาอินเตอร์เฟซเบื้องต้นกำลังจัดเตรียม จะเปิดให้เรียนเร็วๆ นี้</p>
+                <a href="../index.html" class="btn btn-secondary" style="margin-top:1rem;">← กลับสู่วิชาทั้งหมด</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2567 ห้องเรียนออนไลน์ครูเตาปูน</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

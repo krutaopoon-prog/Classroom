@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทที่ 1: ความรู้พื้นฐานเครือข่าย | ครูเตาปูน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../../../../index.html" class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <span>ห้องเรียนครูเตาปูน</span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="../../../../index.html">หน้าแรก</a>
+                    <a href="../../../index.html">วิชาทั้งหมด</a>
+                    <a href="../../../../dashboard.html">ความก้าวหน้า</a>
+                </nav>
+                <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container-narrow">
+
+            <div class="breadcrumb">
+                <a href="../../../../index.html">หน้าแรก</a> /
+                <a href="../../../index.html">วิชา</a> /
+                <a href="../../index.html">เครือข่ายคอมพิวเตอร์</a> /
+                <span>บทที่ 1</span>
+            </div>
+
+            <div class="lesson-content">
+                <h2>🌐 บทที่ 1: ความรู้พื้นฐานเครือข่ายคอมพิวเตอร์</h2>
+
+                <h3>1.1 เครือข่ายคอมพิวเตอร์คืออะไร?</h3>
+                <p>
+                    <strong>เครือข่ายคอมพิวเตอร์ (Computer Network)</strong> หมายถึง การเชื่อมต่อคอมพิวเตอร์และอุปกรณ์
+                    ต่างๆ เข้าด้วยกันเพื่อให้สามารถสื่อสารและแลกเปลี่ยนข้อมูลกันได้
+                </p>
+                <p>
+                    การเชื่อมต่อนี้อาจเป็นแบบ <strong>มีสาย (Wired)</strong> เช่น สายทองแดง, สายใยแก้วนำแสง
+                    หรือแบบ <strong>ไร้สาย (Wireless)</strong> เช่น Wi-Fi, Bluetooth, 4G/5G
+                </p>
+
+                <div style="background:#EBF8FF; border-left:4px solid #2C5282; padding:1rem 1.5rem; border-radius:0.5rem; margin: 1.5rem 0;">
+                    <strong>💡 ตัวอย่าง:</strong> เมื่อคุณส่ง LINE หาเพื่อน ข้อมูลของคุณผ่านเครือข่ายอินเทอร์เน็ต
+                    ซึ่งเป็นเครือข่ายขนาดใหญ่ที่เชื่อมต่อคอมพิวเตอร์นับพันล้านเครื่องทั่วโลก
+                </div>
+
+                <h3>1.2 ประโยชน์ของเครือข่ายคอมพิวเตอร์</h3>
+                <ul>
+                    <li><strong>แชร์ข้อมูล:</strong> ส่งไฟล์ รูปภาพ เอกสาร ระหว่างอุปกรณ์</li>
+                    <li><strong>แชร์อุปกรณ์:</strong> ใช้เครื่องพิมพ์ร่วมกันหลายเครื่อง</li>
+                    <li><strong>สื่อสาร:</strong> อีเมล วิดีโอคอล ประชุมออนไลน์</li>
+                    <li><strong>เชื่อมต่ออินเทอร์เน็ต:</strong> เข้าถึงข้อมูลทั่วโลก</li>
+                    <li><strong>ประหยัดต้นทุน:</strong> ใช้ทรัพยากรร่วมกัน ลดค่าใช้จ่าย</li>
+                </ul>
+
+                <h3>1.3 ประเภทของเครือข่าย</h3>
+                <div class="grid grid-2" style="margin-top:1rem;">
+                    <div style="background:#F7FAFC; border:1px solid #E2E8F0; border-radius:0.75rem; padding:1.25rem;">
+                        <h4 style="color:#2C5282; margin-bottom:0.5rem;">🏠 LAN</h4>
+                        <p style="margin:0; font-size:0.9rem;">Local Area Network<br>เครือข่ายบริเวณเฉพาะที่ เช่น ภายในบ้าน โรงเรียน ออฟฟิศ</p>
+                    </div>
+                    <div style="background:#F7FAFC; border:1px solid #E2E8F0; border-radius:0.75rem; padding:1.25rem;">
+                        <h4 style="color:#2C5282; margin-bottom:0.5rem;">🏙️ MAN</h4>
+                        <p style="margin:0; font-size:0.9rem;">Metropolitan Area Network<br>เครือข่ายระดับเมือง เชื่อมหลายสาขาในเมืองเดียว</p>
+                    </div>
+                    <div style="background:#F7FAFC; border:1px solid #E2E8F0; border-radius:0.75rem; padding:1.25rem;">
+                        <h4 style="color:#2C5282; margin-bottom:0.5rem;">🌏 WAN</h4>
+                        <p style="margin:0; font-size:0.9rem;">Wide Area Network<br>เครือข่ายขนาดใหญ่ครอบคลุมทั่วประเทศหรือทั่วโลก</p>
+                    </div>
+                    <div style="background:#F7FAFC; border:1px solid #E2E8F0; border-radius:0.75rem; padding:1.25rem;">
+                        <h4 style="color:#2C5282; margin-bottom:0.5rem;">📡 WLAN</h4>
+                        <p style="margin:0; font-size:0.9rem;">Wireless LAN<br>LAN ไร้สาย ใช้ Wi-Fi ในการเชื่อมต่อ</p>
+                    </div>
+                </div>
+
+                <h3>1.4 รูปแบบเครือข่าย (Topology)</h3>
+                <p>รูปแบบการเชื่อมต่ออุปกรณ์ในเครือข่าย มี 5 รูปแบบหลัก:</p>
+                <ul>
+                    <li><strong>Bus Topology:</strong> อุปกรณ์ทุกตัวต่อบนสายเดียวกัน ง่ายแต่ถ้าสายขาดทั้งระบบล่ม</li>
+                    <li><strong>Ring Topology:</strong> ต่อเป็นวงแหวน ข้อมูลวนไปทิศทางเดียว</li>
+                    <li><strong>Star Topology:</strong> อุปกรณ์ทุกตัวต่อเข้า Hub/Switch กลาง นิยมใช้มากที่สุด</li>
+                    <li><strong>Mesh Topology:</strong> ต่อถึงกันทุกตัว ป้องกันการขาดเชื่อมต่อได้ดี</li>
+                    <li><strong>Hybrid Topology:</strong> ผสมรูปแบบต่างๆ เข้าด้วยกัน</li>
+                </ul>
+
+                <div style="background:#FFFAF0; border-left:4px solid #ED8936; padding:1rem 1.5rem; border-radius:0.5rem; margin: 1.5rem 0;">
+                    <strong>📌 จำง่ายๆ:</strong> เครือข่ายในโรงเรียนส่วนใหญ่ใช้ <strong>Star Topology</strong>
+                    โดยมี Switch อยู่ตรงกลาง แล้วเชื่อมสายไปยังคอมพิวเตอร์แต่ละเครื่อง
+                </div>
+
+                <h3>1.5 ส่วนประกอบของเครือข่าย</h3>
+                <ul>
+                    <li><strong>คอมพิวเตอร์/อุปกรณ์ (Node):</strong> เครื่องที่อยู่บนเครือข่าย</li>
+                    <li><strong>สื่อกลาง (Media):</strong> สายหรือสัญญาณที่ส่งข้อมูล</li>
+                    <li><strong>การ์ดเครือข่าย (NIC):</strong> อุปกรณ์เชื่อมต่อคอมพิวเตอร์เข้าเครือข่าย</li>
+                    <li><strong>อุปกรณ์เครือข่าย:</strong> Hub, Switch, Router</li>
+                    <li><strong>โปรโตคอล:</strong> กฎสื่อสาร เช่น TCP/IP</li>
+                </ul>
+            </div>
+
+            <!-- Navigation -->
+            <div class="lesson-nav">
+                <div></div>
+                <div style="display:flex; gap:1rem;">
+                    <a href="quiz.html" class="btn btn-primary">📝 ทำ Quiz บทที่ 1 →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2567 ห้องเรียนออนไลน์ครูเตาปูน</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // บันทึกว่าอ่านเนื้อหาบทที่ 1 แล้ว
+        const data = JSON.parse(localStorage.getItem('progress_networking') || '{}');
+        data['ch1_read'] = true;
+        localStorage.setItem('progress_networking', JSON.stringify(data));
+    </script>
+
+</body>
+</html>

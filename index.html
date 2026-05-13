@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ห้องเรียนออนไลน์ครูเตาปูน | แผนกวิชาอิเล็กทรอนิกส์</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <span>ห้องเรียนครูเตาปูน</span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="index.html" class="active">หน้าแรก</a>
+                    <a href="subjects/index.html">วิชาทั้งหมด</a>
+                    <a href="dashboard.html">ความก้าวหน้า</a>
+                    <a href="about.html">เกี่ยวกับครู</a>
+                </nav>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🎓 ยินดีต้อนรับสู่ห้องเรียนออนไลน์</h1>
+            <p>แผนกวิชาอิเล็กทรอนิกส์ — เรียนรู้ทุกที่ ทุกเวลา ด้วยสื่อการสอนที่ทันสมัย</p>
+            <div class="hero-cta">
+                <a href="subjects/index.html" class="btn btn-primary btn-lg">🚀 เริ่มเรียน</a>
+                <a href="about.html" class="btn btn-outline btn-lg">👩‍🏫 เกี่ยวกับครู</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>📖 วิชาที่เปิดสอน</h2>
+                <p>เลือกวิชาที่ต้องการเรียน แต่ละวิชามีเนื้อหาครบถ้วนพร้อมแบบทดสอบ</p>
+            </div>
+            <div class="grid grid-3">
+
+                <!-- วิชา 1: เครือข่ายคอมพิวเตอร์ -->
+                <div class="card subject-card" style="--subject-color: #2C5282">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: #2C5282;">🌐</div>
+                        <div>
+                            <div class="card-title">เครือข่ายคอมพิวเตอร์</div>
+                            <div class="card-subtitle">Computer Networking</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>พื้นฐานเครือข่าย OSI Model, TCP/IP, อุปกรณ์เครือข่าย และการตั้งค่าระบบเครือข่ายเบื้องต้น</p>
+                        <div class="progress" style="margin-top: 1rem;">
+                            <div class="progress-bar" id="networking-progress" style="width: 0%"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>ความก้าวหน้า</span>
+                            <span id="networking-percent">0%</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size:0.875rem; color: var(--color-text-light);">📚 4 บท | 📝 4 แบบทดสอบ</span>
+                        <a href="subjects/networking/index.html" class="btn btn-primary btn-sm">เรียนเลย →</a>
+                    </div>
+                </div>
+
+                <!-- วิชา 2: อินเตอร์เฟซเบื้องต้น -->
+                <div class="card subject-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: #276749;">🔌</div>
+                        <div>
+                            <div class="card-title">อินเตอร์เฟซเบื้องต้น</div>
+                            <div class="card-subtitle">Basic Interface</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>การสื่อสารระหว่างอุปกรณ์ Serial, I2C, SPI, UART และการต่อวงจรอินเตอร์เฟซเบื้องต้น</p>
+                        <div class="progress" style="margin-top: 1rem;">
+                            <div class="progress-bar" id="interface-progress" style="width: 0%; background: #48BB78;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>ความก้าวหน้า</span>
+                            <span id="interface-percent">0%</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size:0.875rem; color: var(--color-text-light);">📚 4 บท | 📝 4 แบบทดสอบ</span>
+                        <a href="subjects/interface/index.html" class="btn btn-primary btn-sm" style="background: #48BB78;">เรียนเลย →</a>
+                    </div>
+                </div>
+
+                <!-- วิชา 3: สมองกลฝังตัว -->
+                <div class="card subject-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: #744210;">🤖</div>
+                        <div>
+                            <div class="card-title">สมองกลฝังตัว</div>
+                            <div class="card-subtitle">Embedded Systems</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>ไมโครคอนโทรลเลอร์ Arduino, ESP32, การเขียนโปรแกรมควบคุมอุปกรณ์ และโปรเจกต์ IoT</p>
+                        <div class="progress" style="margin-top: 1rem;">
+                            <div class="progress-bar" id="embedded-progress" style="width: 0%; background: #ED8936;"></div>
+                        </div>
+                        <div class="progress-label">
+                            <span>ความก้าวหน้า</span>
+                            <span id="embedded-percent">0%</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size:0.875rem; color: var(--color-text-light);">📚 4 บท | 📝 4 แบบทดสอบ</span>
+                        <a href="subjects/embedded/index.html" class="btn btn-primary btn-sm" style="background: #ED8936;">เรียนเลย →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Study Section -->
+    <section class="section" style="background: var(--color-primary); padding: 3rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">📋 วิธีการเรียน</h2>
+                <p style="color: rgba(255,255,255,0.85);">เรียนรู้ง่ายๆ ใน 3 ขั้นตอน</p>
+            </div>
+            <div class="grid grid-3">
+                <div style="text-align:center; color: white;">
+                    <div style="font-size:3rem; margin-bottom:1rem;">📖</div>
+                    <h3 style="color:white; margin-bottom:0.5rem;">1. อ่านเนื้อหา</h3>
+                    <p style="color:rgba(255,255,255,0.8);">ศึกษาเนื้อหาแต่ละบทอย่างละเอียด</p>
+                </div>
+                <div style="text-align:center; color: white;">
+                    <div style="font-size:3rem; margin-bottom:1rem;">📝</div>
+                    <h3 style="color:white; margin-bottom:0.5rem;">2. ทำแบบทดสอบ</h3>
+                    <p style="color:rgba(255,255,255,0.8);">ทดสอบความเข้าใจด้วย Quiz ท้ายบท</p>
+                </div>
+                <div style="text-align:center; color: white;">
+                    <div style="font-size:3rem; margin-bottom:1rem;">📊</div>
+                    <h3 style="color:white; margin-bottom:0.5rem;">3. ดูความก้าวหน้า</h3>
+                    <p style="color:rgba(255,255,255,0.8);">ติดตามคะแนนและความก้าวหน้าได้ตลอด</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>⚡ ห้องเรียนครูเตาปูน</h4>
+                    <p style="color:rgba(255,255,255,0.7); margin-bottom:0.5rem;">แผนกวิชาอิเล็กทรอนิกส์</p>
+                    <p style="color:rgba(255,255,255,0.7);">เรียนรู้ทุกที่ ทุกเวลา ไม่มีค่าใช้จ่าย</p>
+                </div>
+                <div>
+                    <h4>วิชาทั้งหมด</h4>
+                    <a href="subjects/networking/index.html">เครือข่ายคอมพิวเตอร์</a>
+                    <a href="subjects/interface/index.html">อินเตอร์เฟซเบื้องต้น</a>
+                    <a href="subjects/embedded/index.html">สมองกลฝังตัว</a>
+                </div>
+                <div>
+                    <h4>ลิงก์</h4>
+                    <a href="dashboard.html">ความก้าวหน้า</a>
+                    <a href="about.html">เกี่ยวกับครู</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2567 ห้องเรียนออนไลน์ครูเตาปูน — แผนกวิชาอิเล็กทรอนิกส์</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('active');
+        }
+
+        // โหลดความก้าวหน้าจาก localStorage
+        function loadProgress() {
+            const subjects = ['networking', 'interface', 'embedded'];
+            subjects.forEach(subject => {
+                const data = JSON.parse(localStorage.getItem(`progress_${subject}`) || '{}');
+                const chapters = 4;
+                const done = Object.values(data).filter(v => v === true).length;
+                const percent = Math.round((done / chapters) * 100);
+                const bar = document.getElementById(`${subject}-progress`);
+                const label = document.getElementById(`${subject}-percent`);
+                if (bar) bar.style.width = percent + '%';
+                if (label) label.textContent = percent + '%';
+            });
+        }
+
+        loadProgress();
+    </script>
+
+</body>
+</html>

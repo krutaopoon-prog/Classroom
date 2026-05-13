@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิชาทั้งหมด | ห้องเรียนครูเตาปูน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <span>ห้องเรียนครูเตาปูน</span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="../index.html">หน้าแรก</a>
+                    <a href="index.html" class="active">วิชาทั้งหมด</a>
+                    <a href="../dashboard.html">ความก้าวหน้า</a>
+                    <a href="../about.html">เกี่ยวกับครู</a>
+                </nav>
+                <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">หน้าแรก</a> / <span>วิชาทั้งหมด</span>
+            </div>
+
+            <div class="section-title" style="text-align:left; margin-bottom: 2rem;">
+                <h2>📚 วิชาทั้งหมด</h2>
+                <p>แผนกวิชาอิเล็กทรอนิกส์ — เลือกวิชาที่ต้องการเรียน</p>
+            </div>
+
+            <div class="grid grid-3">
+
+                <div class="card subject-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: #2C5282;">🌐</div>
+                        <div>
+                            <div class="card-title">เครือข่ายคอมพิวเตอร์</div>
+                            <div class="card-subtitle">Computer Networking</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>ศึกษาโครงสร้างเครือข่าย โปรโตคอล TCP/IP, OSI Model และอุปกรณ์เครือข่ายต่างๆ</p>
+                        <ul style="list-style:none; margin:0; padding:0; margin-top:0.75rem;">
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 1: ความรู้พื้นฐานเครือข่าย</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 2: OSI Model</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 3: TCP/IP Protocol</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 4: อุปกรณ์เครือข่าย</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size:0.875rem; color:#718096;">4 บท | 4 Quiz</span>
+                        <a href="networking/index.html" class="btn btn-primary btn-sm">เข้าเรียน →</a>
+                    </div>
+                </div>
+
+                <div class="card subject-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: #276749;">🔌</div>
+                        <div>
+                            <div class="card-title">อินเตอร์เฟซเบื้องต้น</div>
+                            <div class="card-subtitle">Basic Interface</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>เรียนรู้การสื่อสารระหว่างอุปกรณ์อิเล็กทรอนิกส์ผ่านโปรโตคอลต่างๆ</p>
+                        <ul style="list-style:none; margin:0; padding:0; margin-top:0.75rem;">
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 1: Serial Communication</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 2: UART Protocol</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 3: I2C Interface</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 4: SPI Interface</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size:0.875rem; color:#718096;">4 บท | 4 Quiz</span>
+                        <a href="interface/index.html" class="btn btn-primary btn-sm" style="background:#48BB78;">เข้าเรียน →</a>
+                    </div>
+                </div>
+
+                <div class="card subject-card">
+                    <div class="card-header">
+                        <div class="card-icon" style="background: #744210;">🤖</div>
+                        <div>
+                            <div class="card-title">สมองกลฝังตัว</div>
+                            <div class="card-subtitle">Embedded Systems</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>ไมโครคอนโทรลเลอร์ Arduino และ ESP32 เขียนโปรแกรมควบคุมอุปกรณ์จริง</p>
+                        <ul style="list-style:none; margin:0; padding:0; margin-top:0.75rem;">
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 1: ไมโครคอนโทรลเลอร์</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 2: Arduino เบื้องต้น</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 3: Input/Output</li>
+                            <li style="padding:0.25rem 0; color:#718096; font-size:0.875rem;">📖 บทที่ 4: โปรเจกต์ IoT</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span style="font-size:0.875rem; color:#718096;">4 บท | 4 Quiz</span>
+                        <a href="embedded/index.html" class="btn btn-primary btn-sm" style="background:#ED8936;">เข้าเรียน →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2567 ห้องเรียนออนไลน์ครูเตาปูน — แผนกวิชาอิเล็กทรอนิกส์</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

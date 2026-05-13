@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครือข่ายคอมพิวเตอร์ | ห้องเรียนครูเตาปูน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../../index.html" class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <span>ห้องเรียนครูเตาปูน</span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="../../index.html">หน้าแรก</a>
+                    <a href="../index.html" class="active">วิชาทั้งหมด</a>
+                    <a href="../../dashboard.html">ความก้าวหน้า</a>
+                    <a href="../../about.html">เกี่ยวกับครู</a>
+                </nav>
+                <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Subject Hero -->
+    <div style="background: linear-gradient(135deg, #2C5282, #1A365D); color:white; padding: 2.5rem 0;">
+        <div class="container">
+            <div class="breadcrumb" style="color:rgba(255,255,255,0.7);">
+                <a href="../../index.html" style="color:rgba(255,255,255,0.7);">หน้าแรก</a> /
+                <a href="../index.html" style="color:rgba(255,255,255,0.7);">วิชาทั้งหมด</a> /
+                <span style="color:white;">เครือข่ายคอมพิวเตอร์</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:1.5rem; margin-top:1rem;">
+                <div style="font-size:4rem;">🌐</div>
+                <div>
+                    <h1 style="color:white; margin-bottom:0.5rem;">เครือข่ายคอมพิวเตอร์</h1>
+                    <p style="color:rgba(255,255,255,0.85); margin:0;">Computer Networking | 4 บทเรียน | 4 แบบทดสอบ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="container">
+
+            <!-- Overall Progress -->
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3 style="margin-bottom:1rem;">📊 ความก้าวหน้าในวิชานี้</h3>
+                <div class="progress">
+                    <div class="progress-bar" id="total-progress" style="width:0%"></div>
+                </div>
+                <div class="progress-label">
+                    <span>เรียนแล้ว <span id="done-count">0</span> / 4 บท</span>
+                    <span id="total-percent">0%</span>
+                </div>
+            </div>
+
+            <!-- Chapter List -->
+            <h3 style="margin-bottom:1.5rem; color: var(--color-primary);">📚 บทเรียน</h3>
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+
+                <div class="card" style="padding:1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                        <div style="display:flex; align-items:center; gap:1rem;">
+                            <div id="status-ch1" style="width:36px; height:36px; background:#E2E8F0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1rem;">1</div>
+                            <div>
+                                <div style="font-weight:600; color:var(--color-text);">บทที่ 1: ความรู้พื้นฐานเครือข่ายคอมพิวเตอร์</div>
+                                <div style="font-size:0.875rem; color:var(--color-text-light);">Network Fundamentals — ความหมาย ประเภท และองค์ประกอบของเครือข่าย</div>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:0.75rem; flex-shrink:0;">
+                            <a href="chapters/ch1/content.html" class="btn btn-secondary btn-sm">📖 เนื้อหา</a>
+                            <a href="chapters/ch1/quiz.html" class="btn btn-primary btn-sm">📝 Quiz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding:1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                        <div style="display:flex; align-items:center; gap:1rem;">
+                            <div id="status-ch2" style="width:36px; height:36px; background:#E2E8F0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1rem;">2</div>
+                            <div>
+                                <div style="font-weight:600; color:var(--color-text);">บทที่ 2: OSI Model</div>
+                                <div style="font-size:0.875rem; color:var(--color-text-light);">OSI 7 Layers — โครงสร้างและหน้าที่ของแต่ละชั้น</div>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:0.75rem; flex-shrink:0;">
+                            <a href="chapters/ch2/content.html" class="btn btn-secondary btn-sm">📖 เนื้อหา</a>
+                            <a href="chapters/ch2/quiz.html" class="btn btn-primary btn-sm">📝 Quiz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding:1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                        <div style="display:flex; align-items:center; gap:1rem;">
+                            <div id="status-ch3" style="width:36px; height:36px; background:#E2E8F0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1rem;">3</div>
+                            <div>
+                                <div style="font-weight:600; color:var(--color-text);">บทที่ 3: TCP/IP Protocol Suite</div>
+                                <div style="font-size:0.875rem; color:var(--color-text-light);">IP Address, Subnet Mask, Gateway — การกำหนดค่าเครือข่าย</div>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:0.75rem; flex-shrink:0;">
+                            <a href="chapters/ch3/content.html" class="btn btn-secondary btn-sm">📖 เนื้อหา</a>
+                            <a href="chapters/ch3/quiz.html" class="btn btn-primary btn-sm">📝 Quiz</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding:1.5rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+                        <div style="display:flex; align-items:center; gap:1rem;">
+                            <div id="status-ch4" style="width:36px; height:36px; background:#E2E8F0; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1rem;">4</div>
+                            <div>
+                                <div style="font-weight:600; color:var(--color-text);">บทที่ 4: อุปกรณ์เครือข่าย</div>
+                                <div style="font-size:0.875rem; color:var(--color-text-light);">Switch, Router, Hub, Access Point — การทำงานและการใช้งาน</div>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:0.75rem; flex-shrink:0;">
+                            <a href="chapters/ch4/content.html" class="btn btn-secondary btn-sm">📖 เนื้อหา</a>
+                            <a href="chapters/ch4/quiz.html" class="btn btn-primary btn-sm">📝 Quiz</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2567 ห้องเรียนออนไลน์ครูเตาปูน — แผนกวิชาอิเล็กทรอนิกส์</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function loadProgress() {
+            const data = JSON.parse(localStorage.getItem('progress_networking') || '{}');
+            let done = 0;
+            for (let i = 1; i <= 4; i++) {
+                if (data[`ch${i}`]) {
+                    done++;
+                    const el = document.getElementById(`status-ch${i}`);
+                    if (el) {
+                        el.textContent = '✓';
+                        el.style.background = '#48BB78';
+                        el.style.color = 'white';
+                    }
+                }
+            }
+            const percent = Math.round((done / 4) * 100);
+            document.getElementById('total-progress').style.width = percent + '%';
+            document.getElementById('done-count').textContent = done;
+            document.getElementById('total-percent').textContent = percent + '%';
+        }
+        loadProgress();
+    </script>
+
+</body>
+</html>

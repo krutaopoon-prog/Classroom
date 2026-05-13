@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ความก้าวหน้า | ห้องเรียนครูเตาปูน</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">⚡</div>
+                    <span>ห้องเรียนครูเตาปูน</span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="index.html">หน้าแรก</a>
+                    <a href="subjects/index.html">วิชาทั้งหมด</a>
+                    <a href="dashboard.html" class="active">ความก้าวหน้า</a>
+                    <a href="about.html">เกี่ยวกับครู</a>
+                </nav>
+                <button class="mobile-menu-btn" onclick="document.getElementById('mainNav').classList.toggle('active')">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">หน้าแรก</a> / <span>ความก้าวหน้า</span>
+            </div>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem; flex-wrap:wrap; gap:1rem;">
+                <div>
+                    <h2 style="color:var(--color-primary); margin-bottom:0.25rem;">📊 ความก้าวหน้าของฉัน</h2>
+                    <p style="margin:0;">ติดตามบทเรียนและคะแนนที่ทำไป</p>
+                </div>
+                <button class="btn btn-secondary btn-sm" onclick="if(confirm('ต้องการรีเซ็ตข้อมูลทั้งหมด?')) { localStorage.clear(); location.reload(); }">🗑️ รีเซ็ตข้อมูล</button>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="grid grid-3" style="margin-bottom:2.5rem;">
+                <div class="card" style="text-align:center; background: linear-gradient(135deg, #2C5282, #4A7C9B); color:white; border:none;">
+                    <div style="font-size:2.5rem; font-weight:700; color:white;" id="total-chapters">0</div>
+                    <div style="color:rgba(255,255,255,0.85);">บทที่เรียนแล้ว</div>
+                </div>
+                <div class="card" style="text-align:center; background: linear-gradient(135deg, #276749, #48BB78); color:white; border:none;">
+                    <div style="font-size:2.5rem; font-weight:700; color:white;" id="avg-score">-</div>
+                    <div style="color:rgba(255,255,255,0.85);">คะแนนเฉลี่ย</div>
+                </div>
+                <div class="card" style="text-align:center; background: linear-gradient(135deg, #744210, #ED8936); color:white; border:none;">
+                    <div style="font-size:2.5rem; font-weight:700; color:white;" id="total-subjects">0/3</div>
+                    <div style="color:rgba(255,255,255,0.85);">วิชาที่เริ่มเรียน</div>
+                </div>
+            </div>
+
+            <!-- Subject Details -->
+            <h3 style="color:var(--color-primary); margin-bottom:1.5rem;">รายละเอียดแต่ละวิชา</h3>
+            <div style="display:flex; flex-direction:column; gap:1.5rem;">
+
+                <!-- เครือข่าย -->
+                <div class="card">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:1rem;">
+                        <div style="display:flex; align-items:center; gap:0.75rem;">
+                            <div style="width:42px; height:42px; background:#2C5282; color:white; border-radius:0.75rem; display:flex; align-items:center; justify-content:center; font-size:1.25rem;">🌐</div>
+                            <div>
+                                <div style="font-weight:700; color:var(--color-text);">เครือข่ายคอมพิวเตอร์</div>
+                                <div style="font-size:0.875rem; color:var(--color-text-light);">Computer Networking</div>
+                            </div>
+                        </div>
+                        <a href="subjects/networking/index.html" class="btn btn-primary btn-sm">ไปเรียนต่อ →</a>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" id="net-bar" style="width:0%"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="net-label">ยังไม่เริ่มเรียน</span>
+                        <span id="net-percent">0%</span>
+                    </div>
+                    <div id="net-scores" style="margin-top:0.75rem; display:flex; gap:0.5rem; flex-wrap:wrap;"></div>
+                </div>
+
+                <!-- อินเตอร์เฟซ -->
+                <div class="card">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:1rem;">
+                        <div style="display:flex; align-items:center; gap:0.75rem;">
+                            <div style="width:42px; height:42px; background:#276749; color:white; border-radius:0.75rem; display:flex; align-items:center; justify-content:center; font-size:1.25rem;">🔌</div>
+                            <div>
+                                <div style="font-weight:700; color:var(--color-text);">อินเตอร์เฟซเบื้องต้น</div>
+                                <div style="font-size:0.875rem; color:var(--color-text-light);">Basic Interface</div>
+                            </div>
+                        </div>
+                        <a href="subjects/interface/index.html" class="btn btn-primary btn-sm" style="background:#48BB78;">ไปเรียนต่อ →</a>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" id="int-bar" style="width:0%; background:#48BB78;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="int-label">ยังไม่เริ่มเรียน</span>
+                        <span id="int-percent">0%</span>
+                    </div>
+                </div>
+
+                <!-- สมองกลฝังตัว -->
+                <div class="card">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1rem; flex-wrap:wrap; gap:1rem;">
+                        <div style="display:flex; align-items:center; gap:0.75rem;">
+                            <div style="width:42px; height:42px; background:#744210; color:white; border-radius:0.75rem; display:flex; align-items:center; justify-content:center; font-size:1.25rem;">🤖</div>
+                            <div>
+                                <div style="font-weight:700; color:var(--color-text);">สมองกลฝังตัว</div>
+                                <div style="font-size:0.875rem; color:var(--color-text-light);">Embedded Systems</div>
+                            </div>
+                        </div>
+                        <a href="subjects/embedded/index.html" class="btn btn-primary btn-sm" style="background:#ED8936;">ไปเรียนต่อ →</a>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" id="emb-bar" style="width:0%; background:#ED8936;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="emb-label">ยังไม่เริ่มเรียน</span>
+                        <span id="emb-percent">0%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2567 ห้องเรียนออนไลน์ครูเตาปูน</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function loadDashboard() {
+            const subjects = [
+                { key: 'networking', barId: 'net-bar', labelId: 'net-label', percentId: 'net-percent', scoresId: 'net-scores' },
+                { key: 'interface',  barId: 'int-bar', labelId: 'int-label', percentId: 'int-percent', scoresId: null },
+                { key: 'embedded',   barId: 'emb-bar', labelId: 'emb-label', percentId: 'emb-percent', scoresId: null }
+            ];
+
+            let totalChapters = 0;
+            let totalScores = [];
+            let subjectsStarted = 0;
+
+            subjects.forEach(s => {
+                const data = JSON.parse(localStorage.getItem(`progress_${s.key}`) || '{}');
+                let done = 0;
+                for (let i = 1; i <= 4; i++) {
+                    if (data[`ch${i}`]) done++;
+                    if (data[`ch${i}_score`] !== undefined) totalScores.push(data[`ch${i}_score`]);
+                }
+                const percent = Math.round((done / 4) * 100);
+                totalChapters += done;
+                if (done > 0) subjectsStarted++;
+
+                document.getElementById(s.barId).style.width = percent + '%';
+                document.getElementById(s.percentId).textContent = percent + '%';
+                document.getElementById(s.labelId).textContent = done > 0 ? `เรียนแล้ว ${done}/4 บท` : 'ยังไม่เริ่มเรียน';
+
+                // แสดงคะแนน quiz
+                if (s.scoresId) {
+                    let html = '';
+                    for (let i = 1; i <= 4; i++) {
+                        if (data[`ch${i}_score`] !== undefined) {
+                            const sc = data[`ch${i}_score`];
+                            const color = sc >= 4 ? '#48BB78' : sc >= 3 ? '#ED8936' : '#F56565';
+                            html += `<span style="background:${color}; color:white; padding:0.25rem 0.75rem; border-radius:1rem; font-size:0.8rem;">บท${i}: ${sc}/5</span>`;
+                        }
+                    }
+                    document.getElementById(s.scoresId).innerHTML = html;
+                }
+            });
+
+            document.getElementById('total-chapters').textContent = totalChapters;
+            document.getElementById('total-subjects').textContent = `${subjectsStarted}/3`;
+            if (totalScores.length > 0) {
+                const avg = (totalScores.reduce((a, b) => a + b, 0) / totalScores.length).toFixed(1);
+                document.getElementById('avg-score').textContent = `${avg}/5`;
+            }
+        }
+
+        loadDashboard();
+    </script>
+
+</body>
+</html>
